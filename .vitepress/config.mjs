@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     title: "JSCore Documentation",
     description: "The Minecraft-aware JavaScript runtime, do as you will.",
+    head: [['link', { rel: 'icon', href: '/favicon.png' }]],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -44,31 +45,34 @@ export default defineConfig({
                         {
                             text: "Creating Subcommands",
                             link: "/dev/using-commands/creating-subcommands",
-                        }
-                    ]
+                        },
+                    ],
                 },
                 {
                     text: "Listening to Events",
                     items: [
                         {
                             text: "Using Runnables",
-                            link: "/dev/listening-to-events/using-runnables.md"
+                            link: "/dev/listening-to-events/using-runnables.md",
                         },
                         {
                             text: "Running Non-blocking Code",
-                            link: "/dev/listening-to-events/running-non-blocking-code.md"
+                            link: "/dev/listening-to-events/running-non-blocking-code.md",
                         },
                         {
                             text: "Event Providers",
-                            link: "/dev/listening-to-events/event-providers.md"
-                        }
-                    ]
-                }
+                            link: "/dev/listening-to-events/event-providers.md",
+                        },
+                    ],
+                },
             ],
         },
 
         socialLinks: [
-            { icon: "github", link: "https://github.com/vuejs/vitepress" },
+            {
+                icon: "github",
+                link: "https://github.com/FabricCore/jscore-book",
+            },
         ],
     },
 });
