@@ -12,10 +12,10 @@ let myRunnable = Core.runnable(
 Or it can compile a file to a runnable function.
 
 ```js
-let myRunnable = requireRunnable("modules/myModule/myRunnable.js");
+let myRunnable = requireRunnable("modules/my_module/myRunnable.js");
 ```
 
-And in `modules/myModule/myRunnable.js`
+And in `modules/my_module/myRunnable.js`
 
 ```js
 function main() {

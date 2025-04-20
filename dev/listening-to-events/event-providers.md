@@ -37,7 +37,7 @@ Suppose we want to run some code on every tick, in the [Fabric API events index]
 If we want to print out our coordinates at every tick, we can write a function that is ran every world tick.
 
 ```js
-// modules/myModule/onTick.js
+// modules/my_module/onTick.js
 
 // although END_WORLD_TICK gives ClientWorld as a parameter,
 // We don't actually need it.
@@ -58,9 +58,9 @@ function onTick(_world) {
 Because we are listening to a Fabric API event, create a runnable with **yarnwrap.Core**.
 
 ```js
-// modules/myModule/entry.js
+// modules/my_module/entry.js
 let onTickRunnable = requireRunnable(
-  "modules/myModule/onTick.js",
+  "modules/my_module/onTick.js",
   yarnwrap.Core,
 );
 
