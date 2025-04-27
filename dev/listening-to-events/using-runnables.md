@@ -3,7 +3,7 @@
 A runnable is a compiled JS function, a runnable can be created with a _unique name_ and the function source.
 
 ```js
-let myRunnable = Core.runnable(
+let myRunnable = Core.runnable.create(
   "my-runnable",
   "function main() { console.log('hi') }",
 );
@@ -36,7 +36,7 @@ myRunnable.runF(); // 'hi'
 It can also take arguments
 
 ```js
-let myRunnable = Core.runnable(
+let myRunnable = Core.runnable.create(
   "my-other-runnable",
   "function main(a, b) { console.log(`${a} and ${b}`) }",
 );

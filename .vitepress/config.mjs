@@ -15,11 +15,26 @@ export default defineConfig({
         sidebar: {
             "/dev/": [
                 {
-                    text: "Getting Started",
+                    text: "Quick Links",
+                    collapsed: false,
                     items: [
                         {
-                            text: "Introduction to JSCore and YarnWrap",
-                            link: "/dev/getting-started/introduction-to-jscore-and-yarnwrap",
+                            text: "Yarnwrap Index",
+                            link: "https://fabriccore.github.io/yarnwrap"
+                        },
+                        {
+                            text: "Package Repository",
+                            link: "https://github.com/FabricCore/repo"
+                        }
+                    ]
+                },
+                {
+                    text: "Getting Started",
+                    collapsed: false,
+                    items: [
+                        {
+                            text: "Introduction to JSCore",
+                            link: "/dev/getting-started/introduction-to-jscore",
                         },
                         {
                             text: "The Init System",
@@ -33,6 +48,7 @@ export default defineConfig({
                 },
                 {
                     text: "Using Commands",
+                    collapsed: false,
                     items: [
                         {
                             text: "Your First Command",
@@ -50,6 +66,7 @@ export default defineConfig({
                 },
                 {
                     text: "Listening to Events",
+                    collapsed: false,
                     items: [
                         {
                             text: "Using Runnables",
@@ -65,6 +82,10 @@ export default defineConfig({
                         },
                     ],
                 },
+                {
+                    text: "Best Practices",
+                    collapsed: false
+                }
             ],
         },
 

@@ -1,4 +1,4 @@
-# Introduction to JSCore and YarnWrap
+# Introduction to JSCore and Yarnwrap
 
 ## What is JSCore?
 
@@ -6,15 +6,15 @@ JSCore allows JavaScript to interact with Minecraft: Java Edition.
 
 User-written scripts can directly access existing Java methods in Minecraft, allowing for customisation capabilities similar to that of modding. With support for hot reloading of scripts, providing a painless replacement for Java modding.
 
-JSCore comes with [YarnWrap](https://fabriccore.github.io/yarnwrap) - a thin wrapper translating methods from Minecraft to classes and functions callable from JS.
+JSCore comes with [Yarnwrap](https://fabriccore.github.io/yarnwrap) - a thin wrapper translating methods from Minecraft to classes and functions callable from JS.
 
-## Why is YarnWrap needed?
+## Why is Yarnwrap needed?
 
 Minecraft contains obfuscated code where naming of classes and methods are randomised to hide their purpose. Modding toolkits such as Fabric replaces readable class names (e.g. `PlayerEntity`) to the obfuscated names (e.g. `Class_1234`) at compile-time to allow readable names to be used in modding.
 
 However, compile-time mappings are not possible for scripting languages, so Java classes and methods must be referenced by their real name.
 
-YarnWrap consists of thousands of classes in their readable names, each wraps an obfuscated class. When a YarnWrap method is called, the underlying/obfuscated method gets invoked. In this case scripting languages can access internal Minecraft methods through classes provided by YarnWrap.
+Yarnwrap consists of thousands of classes in their readable names, each wraps an obfuscated class. When a Yarnwrap method is called, the underlying/obfuscated method gets invoked. In this case scripting languages can access internal Minecraft methods through classes provided by Yarnwrap.
 
 ## What is Rhino?
 

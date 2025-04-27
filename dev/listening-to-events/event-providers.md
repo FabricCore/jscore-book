@@ -11,12 +11,12 @@ When creating runnables, you can specify which **Core** should the runnable use.
 
 ```js
 // `Core` aliases to `jscore.Core`
-let jscoreRunnable = Core.runnable(
+let jscoreRunnable = Core.runnable.create(
   "jscore-runnable",
   "function main() { console.log('hi') }",
 );
 
-let yarnwrapRunnable = yarnwrap.Core.runnable(
+let yarnwrapRunnable = yarnwrap.Core.runnable.create(
   "jscore-runnable",
   "function main() { console.log('hi') }",
 );
@@ -53,7 +53,7 @@ function onTick(_world) {
 > - `pEntity` is an `Entity`
 > - `pLiving` is a `LivingEntity`
 > 
-> Each provide different methods, see [YarnWrap index](https://fabriccore.github.io/yarnwrap).
+> Each provide different methods, see [Yarnwrap index](https://fabriccore.github.io/yarnwrap).
 
 Because we are listening to a Fabric API event, create a runnable with **yarnwrap.Core**.
 
@@ -69,3 +69,5 @@ let ClientTickEvents =
 
 ClientTickEvents.END_WORLD_TICK.register(onTickRunnable);
 ```
+
+However the listener is re-registered each time the script is reloaded, and it is not possible to remove a listener once added. Therefore it is recommended to use [**modtoggle**](https://github.com/FabricCore/modtoggle/) to listen to events.
