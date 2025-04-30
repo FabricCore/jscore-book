@@ -57,10 +57,13 @@ You will need to specify all of the following details in `modules/my_module/pack
   "dependencies": {
     "core": "0.1.0"
   },
+  "javaDependencies": [],
 
   "repository": "https://github.com/yourname/repo",
   "homepage": "https://yourname.com/projectname"
 }
 ```
+
+> You only need to specify the JS and Java packages that you use **directly**, packages you use indirectly through dependencies don't have to be specified.
 
 Now this command will be loaded on game launch, the command can also be registered without restarting the game with the in-game command `/jsload init.js`. Do note that rejoining a world is required to register the updated command.

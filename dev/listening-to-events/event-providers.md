@@ -1,5 +1,9 @@
 # Event Providers
 
+> Package **yarn** is required for this guide, run `/pully install yarn` to install the package.
+>
+> You should also add **yarn** as a dependency in package.json.
+
 FabricMC allows you to listen to events by defining a function which is ran whenever the event occurs.
 
 In JSCore, you can define a runnable which will be ran whenever a specific event occurs. Each different type of event requires different types of runnable.
@@ -42,18 +46,14 @@ If we want to print out our coordinates at every tick, we can write a function t
 // although END_WORLD_TICK gives ClientWorld as a parameter,
 // We don't actually need it.
 function onTick(_world) {
-  let x = Math.round(pEntity.x);
-  let y = Math.round(pEntity.y);
-  let z = Math.round(pEntity.z);
+  let playerEntity = yarn.playerEntity;
+  let x = Math.round(playerEntity.x);
+  let y = Math.round(playerEntity.y);
+  let z = Math.round(playerEntity.z);
   console.log(`x=${x}, y=${y}, z=${z}`);
 }
 ```
-
-> - `player` is a `PlayerEntity`
-> - `pEntity` is an `Entity`
-> - `pLiving` is a `LivingEntity`
-> 
-> Each provide different methods, see [Yarnwrap index](https://fabriccore.github.io/yarnwrap).
+> **yarn.playerEntity** is provided by [**yarn.js**](https://github.com/fabricCore/yarn.js), see [Yarnwrap index](https://fabriccore.github.io/yarnwrap) for methods provided by each class.
 
 Because we are listening to a Fabric API event, create a runnable with **yarnwrap.Core**.
 
@@ -64,10 +64,9 @@ let onTickRunnable = requireRunnable(
   yarnwrap.Core,
 );
 
-let ClientTickEvents =
-  Packages.net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-
 ClientTickEvents.END_WORLD_TICK.register(onTickRunnable);
 ```
+
+> **ClientTickEvents** along with other event imports are provided by [**yarn.js**](https://github.com/fabricCore/yarn.js).
 
 However the listener is re-registered each time the script is reloaded, and it is not possible to remove a listener once added. Therefore it is recommended to use [**modtoggle**](https://github.com/FabricCore/modtoggle/) to listen to events.
