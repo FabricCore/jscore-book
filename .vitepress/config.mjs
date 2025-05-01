@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     title: "JSCore Documentation",
     description: "The Minecraft-aware JavaScript runtime, do as you will.",
-    head: [['link', { rel: 'icon', href: '/favicon.png' }]],
+    head: [["link", { rel: "icon", href: "/favicon.png" }]],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -13,6 +13,26 @@ export default defineConfig({
         ],
 
         sidebar: {
+            "/player/": [
+                {
+                    text: "Basic Setup",
+                    collapsed: true,
+                    items: [
+                        {
+                            text: "Quick Start",
+                            link: "/player/basic-setup/quick-start",
+                        },
+                        {
+                            text: "Troubleshooting",
+                            link: "/player/basic-setup/troubleshooting",
+                        },
+                        {
+                            text: "FAQ",
+                            link: "/player/basic-setup/faq",
+                        },
+                    ],
+                },
+            ],
             "/dev/": [
                 {
                     text: "Quick Links",
@@ -20,13 +40,13 @@ export default defineConfig({
                     items: [
                         {
                             text: "Yarnwrap Index",
-                            link: "https://fabriccore.github.io/yarnwrap"
+                            link: "https://fabriccore.github.io/yarnwrap",
                         },
                         {
                             text: "Package Repository",
-                            link: "https://github.com/FabricCore/repo"
-                        }
-                    ]
+                            link: "https://github.com/FabricCore/repo",
+                        },
+                    ],
                 },
                 {
                     text: "Getting Started",
@@ -84,15 +104,23 @@ export default defineConfig({
                 },
                 {
                     text: "Best Practices",
-                    collapsed: false
-                }
+                    collapsed: false,
+                },
             ],
         },
 
         socialLinks: [
             {
                 icon: "github",
-                link: "https://github.com/FabricCore/jscore-book",
+                link: "https://github.com/FabricCore",
+            },
+            {
+                icon: "matrix",
+                link: "https://matrix.to/#/!qrUQMTxUReiPipzwhb:matrix.org?via=matrix.org"
+            },
+            {
+                icon: "discord",
+                link: "https://discord.gg/XfSZ5tc7Sk",
             },
         ],
     },
