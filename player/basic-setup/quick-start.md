@@ -31,9 +31,11 @@ Run the following command in game.
 
 Then **rejoin world** to register the new command.
 
-### 4. Fly Free
+### 4. Support the Project
+
+Support the project by **sharing modules you wrote**.
 
 - Check out the [package repo](https://github.com/FabricCore/repo) to install community-made modules, or
 - Follow the [developer guide](/dev) to write your own package.
 
-> If you want to add a package to the package repo, that would be greatly appreciated.
+[Matrix (recommended)](https://matrix.to/#/!qrUQMTxUReiPipzwhb:matrix.org?via=matrix.org) | [Discord](https://discord.gg/XfSZ5tc7Sk)
