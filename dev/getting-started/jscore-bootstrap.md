@@ -14,7 +14,7 @@ The Bootstrap also include the *Core module*, providing in-game access of JSCore
 
 ## Using the Bootstrap
 
-1. Download [bootstrap.zip](todo).
+1. Download [bootstrap.zip](https://github.com/FabricCore/bootstrap.js).
 2. Unzip the bootstrap so your folder structure looks as below.
 ```
 .minecraft/config/jscore/
