@@ -90,22 +90,42 @@ export default defineConfig({
                     items: [
                         {
                             text: "Using Runnables",
-                            link: "/dev/listening-to-events/using-runnables.md",
+                            link: "/dev/listening-to-events/using-runnables",
                         },
                         {
                             text: "Running Non-blocking Code",
-                            link: "/dev/listening-to-events/running-non-blocking-code.md",
+                            link: "/dev/listening-to-events/running-non-blocking-code",
                         },
                         {
                             text: "Event Providers",
-                            link: "/dev/listening-to-events/event-providers.md",
+                            link: "/dev/listening-to-events/event-providers",
                         },
                     ],
                 },
                 {
                     text: "Best Practices",
                     collapsed: false,
+                    items: [
+                        {
+                            text: "Code Structuring",
+                            link: "/dev/best-practices/code-structuring"
+                        },
+                        {
+                            text: "Common Packages",
+                            link: "/dev/best-practices/common-packages"
+                        },
+                    ]
                 },
+                {
+                    text: "Example Projects",
+                    collapsed: false,
+                    items: [
+                        {
+                            text: "Example Project - EmojiChat",
+                            link: "/dev/example-projects/emojichat"
+                        }
+                    ]
+                }
             ],
         },
 
