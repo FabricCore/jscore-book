@@ -15,6 +15,8 @@ Project repo: [Siriusmart/EmojiChat](https://github.com/Siriusmart/emojichat)
 
 ## Implementation
 
+You may start from the [**package template**](https://github.com/FabricCore/package-template/) provided.
+
 ```
 .minecraft/config/jscore/
 └── modules/
@@ -129,3 +131,8 @@ let emojichat = {
 ```
 
 ## Publishing to Package Repository
+
+1. Writing the README according to the [package template](https://github.com/FabricCore/package-template/).
+2. Add the package to [FabricCore/repo](https://github.com/FabricCore/repo) by either
+    - Opening a pull request to update [index.json](https://github.com/FabricCore/repo/blob/master/index.json).
+    - Open an issue with the URL to your Git repository.
