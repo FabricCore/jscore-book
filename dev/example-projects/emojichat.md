@@ -136,3 +136,5 @@ let emojichat = {
 2. Add the package to [FabricCore/repo](https://github.com/FabricCore/repo) by either
     - Opening a pull request to update [index.json](https://github.com/FabricCore/repo/blob/master/index.json).
     - Open an issue with the URL to your Git repository.
+
+If a license is not specified, your package is assumed to be licensed under the semi-permissive [GNU Lesser General Public License](https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License).
