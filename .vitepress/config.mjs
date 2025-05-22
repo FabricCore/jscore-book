@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    // change base to "/jscore/" for github.io build
     base: "",
     title: "JSCore Documentation",
     description: "The Minecraft-aware JavaScript runtime, do as you will.",
@@ -41,7 +42,7 @@ export default defineConfig({
                     items: [
                         {
                             text: "Yarnwrap Index",
-                            link: "https://fabriccore.github.io/yarnwrap",
+                            link: "https://yarnwrap.siri.ws",
                         },
                         {
                             text: "Package Repository",

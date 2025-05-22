@@ -6,7 +6,7 @@ JSCore allows JavaScript to interact with Minecraft: Java Edition.
 
 User-written scripts can directly access existing Java methods in Minecraft, allowing for customisation capabilities similar to that of modding. With support for hot reloading of scripts, providing a painless replacement for Java modding.
 
-JSCore comes with [Yarnwrap](https://fabriccore.github.io/yarnwrap) - a thin wrapper translating methods from Minecraft to classes and functions callable from JS.
+JSCore comes with [Yarnwrap](https://yarnwrap.siri.ws) - a thin wrapper translating methods from Minecraft to classes and functions callable from JS.
 
 ## Why is Yarnwrap needed?
 
