@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: "",
     title: "JSCore Documentation",
     description: "The Minecraft-aware JavaScript runtime, do as you will.",
     head: [["link", { rel: "icon", href: "/favicon.png" }]],
@@ -16,7 +17,7 @@ export default defineConfig({
             "/player/": [
                 {
                     text: "Basic Setup",
-                    collapsed: true,
+                    collapsed: false,
                     items: [
                         {
                             text: "Quick Start",
