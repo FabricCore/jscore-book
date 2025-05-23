@@ -20,4 +20,4 @@ Yarnwrap consists of thousands of classes in their readable names, each wraps an
 
 Rhino is a vanilla JavaScript runtime by Mozilla. It tightly integrates with Java - allowing Java code to be used from JS and vice versa.
 
-The runtime evaluates JavaScript code similar to a REPL, where each script file has full access to all values defined previously. In essence all variables in Rhino is global unless specified otherwise with appropriate scoping.
+The runtime evaluates JavaScript code similar to a REPL, where each script file has full access to all values defined previously. In essence all variables in Rhino are global unless specified otherwise with appropriate scoping.
