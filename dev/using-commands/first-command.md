@@ -32,6 +32,8 @@ Command.register({
 - `name` is the name of the command to be registered, here `/hello_command` is the name of the command,
 - `execute` contains the command logic, which we will define below.
 
+In general, `[package]/[execute]` should be the full path to your command.
+
 ```js
 // modules/my_module/hellocommand.js
 function main() {
@@ -45,7 +47,7 @@ When the command is ran, this main function will be called. This file can only c
 
 You will need to specify all of the following details in `modules/my_module/package.json`.
 
-```json
+```js
 {
   "name": "my_module",
   "version": "0.1.0",
@@ -60,10 +62,11 @@ You will need to specify all of the following details in `modules/my_module/pack
   "javaDependencies": [],
 
   "repository": "https://github.com/yourname/repo",
+  // put `null` if does not have one
   "homepage": "https://yourname.com/projectname"
 }
 ```
 
 > You only need to specify the JS and Java packages that you use **directly**, packages you use indirectly through dependencies don't have to be specified.
 
-Now this command will be loaded on game launch, the command can also be registered without restarting the game with the in-game command `/jsload init.js`. Do note that rejoining a world is required to register the updated command.
+Now this command will be loaded on game launch, the command can also be registered without restarting the game with the in-game command `/js reload`. Do note that rejoining a world is required to register the updated command.
