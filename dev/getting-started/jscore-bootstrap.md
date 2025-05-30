@@ -42,7 +42,7 @@ Finally the top level `init.js` is loaded, anything loaded including and after t
 
 ## Core Commands
 
-The *Core module* provides two notable commands - `/jseval` and `/jsload`.
+The *Core module* provides two notable commands - `/js` and `/js load`.
 
 ### /js &lt;code&gt;
 
@@ -66,3 +66,5 @@ Script loaded
 ```
 
 To allow hot reloads, `let` should be used in place of `const`. As `let` values can be overwritten but multiple definitions of `const` is not allowed.
+
+> `/js reload` is an alias to `/js load init.js`.

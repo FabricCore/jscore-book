@@ -24,9 +24,9 @@ Provide some bindings and convenient functions for when using the Fabric API.
 
 ## Minor Library Packages
 
-### [modutils](https://github.com/FabricCore/modutils)
+### [modmaths](https://github.com/FabricCore/modmaths)
 
-Library aims to provide basic utilities, expand this package with functions you want.
+Library for maths and stuff. Add more functions to it if you think the maths library should have it.
 
 ### [yarnutils](https://github.com/FabricCore/yarnutils)
 
