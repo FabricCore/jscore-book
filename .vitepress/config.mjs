@@ -17,6 +17,20 @@ export default defineConfig({
         sidebar: {
             "/player/": [
                 {
+                    text: "Quick Links",
+                    collapsed: false,
+                    items: [
+                        {
+                            text: "Community Discord",
+                            link: "https://discord.gg/XfSZ5tc7Sk",
+                        },
+                        {
+                            text: "Package Repository",
+                            link: "https://github.com/FabricCore/repo",
+                        },
+                    ],
+                },
+                {
                     text: "Basic Setup",
                     collapsed: false,
                     items: [
@@ -31,6 +45,16 @@ export default defineConfig({
                         {
                             text: "FAQ",
                             link: "/player/basic-setup/faq",
+                        },
+                    ],
+                },
+                {
+                    text: "Package Reference",
+                    collapsed: false,
+                    items: [
+                        {
+                            text: "Core Packages",
+                            link: "/player/packages-reference/core-packages",
                         },
                     ],
                 },
@@ -110,13 +134,13 @@ export default defineConfig({
                     items: [
                         {
                             text: "Code Structuring",
-                            link: "/dev/best-practices/code-structuring"
+                            link: "/dev/best-practices/code-structuring",
                         },
                         {
                             text: "Common Packages",
-                            link: "/dev/best-practices/common-packages"
+                            link: "/dev/best-practices/common-packages",
                         },
-                    ]
+                    ],
                 },
                 {
                     text: "Example Projects",
@@ -124,10 +148,10 @@ export default defineConfig({
                     items: [
                         {
                             text: "Example Project - EmojiChat",
-                            link: "/dev/example-projects/emojichat"
-                        }
-                    ]
-                }
+                            link: "/dev/example-projects/emojichat",
+                        },
+                    ],
+                },
             ],
         },
 
@@ -138,7 +162,7 @@ export default defineConfig({
             },
             {
                 icon: "matrix",
-                link: "https://matrix.to/#/!qrUQMTxUReiPipzwhb:matrix.org?via=matrix.org"
+                link: "https://matrix.to/#/!qrUQMTxUReiPipzwhb:matrix.org?via=matrix.org",
             },
             {
                 icon: "discord",
