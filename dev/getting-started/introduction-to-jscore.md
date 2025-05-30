@@ -16,6 +16,9 @@ However, compile-time mappings are not possible for scripting languages, so Java
 
 Yarnwrap consists of thousands of classes in their readable names, each wraps an obfuscated class. When a Yarnwrap method is called, the underlying/obfuscated method gets invoked. In this case scripting languages can access internal Minecraft methods through classes provided by Yarnwrap.
 
+> [!NOTE]
+> Technically neither Yarnwrap or Fabric API is required, but without them JSCore would not be able to interact with the game.
+
 ## What is Rhino?
 
 Rhino is a vanilla JavaScript runtime by Mozilla. It tightly integrates with Java - allowing Java code to be used from JS and vice versa.

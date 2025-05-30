@@ -7,6 +7,9 @@ Place them in your mods folder.
 - [Yarnwrap (GitHub)](https://github.com/FabricCore/yarnwrap)
 - [JSCore (GitHub)](https://github.com/FabricCore/jscore)
 
+> [!IMPORTANT]
+> Fabric API is required.
+
 ### 2. Download Bootstrap.js
 
 Unzip to ***.minecraft/config/jscore*** so your folder structure look like this.
